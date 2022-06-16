@@ -1,0 +1,49 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+}
+.divNaSvg{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.koperta{
+   height: 70vh;
+   width: 70vh;
+    animation: wsad 6s;
+    animation-fill-mode: forwards;
+}
+#kartka{
+    height: 40vh;
+    width: 40vh;
+    position: absolute;
+    animation: kartka 5s forwards, kartka2 5s forwards;
+   fill-opacity: 0;
+}
+.gora{
+    /* transform: translateY(-100px); */
+    animation: otwieranie 5s forwards;
+    /* transform-origin: 50% 50% 0; */
+    /* transform: scaleY(-1); */
+    /* visibility: hidden; */
+}
+@keyframes wsad{
+    0% {transform: translateY(440px);}
+    50% {transform: translateY(100px);}
+    100%{transform: translateX(-1350px);}
+}
+@keyframes otwieranie{
+    100%{transform: scaleY(-1);}
+}
+@keyframes kartka{
+    50%{fill-opacity:0}
+    100%{fill-opacity: 1;}
+}
+@keyframes kartka2{
+    0%{transform: translateY(400px);}
+    100%{transform: translateY(-100px);}
+}
