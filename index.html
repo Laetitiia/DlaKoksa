@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dla Koksa</title>
 	<link rel="icon" href="img/favicon.ico" type="image">
+	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </head>
 <body>
 
@@ -14,6 +15,10 @@
 	<svg  class="koperta" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.57 110.89"><defs><style>.cls-1koperta{fill:#ececec;}.cls-2koperta{fill:#ccc;}.gora{fill:#d4d3d3;}</style></defs><g id="Warstwa_1-2" data-name="Warstwa 1"><polygon class="cls-1koperta" points="187 0 187 0 187 0 187 0 1 0 1 0 1 0 1 0 1 0 1 0 1 102.97 1 110.89 187 110.89 187 102.97 187 0 187 0"/><path class="cls-2koperta" d="M105.77,167.84,51.45,121.31l-1-.87H237.57c-4,4.21-45.41,47.4-45.42,47.4H105.77" transform="translate(-50.43 -120.44)"/></g><g id="Warstwa_2" data-name="Warstwa 2"><polygon class="gora" points="0.24 0 0.24 0 0 0 0 0 0 0 0 0 0.12 0.08 0.24 0 0.24 0"/></g></svg>
 	<svg id="kartka" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.98 186.98"><defs><style>.cls-1{fill:#768800;}.cls-2{font-size:12px;fill:#fcff5f;font-family:MyriadPro-Regular, Myriad Pro;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:-0.01em;}.cls-5{letter-spacing:0em;}</style></defs><rect class="cls-1" width="215.98" height="186.98" rx="2.66"/><text class="cls-2" transform="translate(39.61 83.31)"><tspan class="cls-5" x="4.89" y="0">Lorem ipsum dolor sit amet</tspan></text></svg>
 </div>
-
+<script>const jsConfetti = new JSConfetti()
+	setTimeout(()=>{
+		jsConfetti.addConfetti()
+	},2500)
+	</script>
 </body>
 </html>
